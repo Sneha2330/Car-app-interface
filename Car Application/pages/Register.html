@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3e3e3;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        .nav a {
+            margin: 0 15px;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+        }
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 30px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #e64a19;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Create a New Account</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="login.html">LOGIN</a>
+        <a href="register.html">REGISTER</a>
+    </div>
+    <div class="content" id="register">
+        <h2>Register</h2>
+        <div class="form-container">
+            <h2>Create a New Account</h2>
+            <form action="#" method="POST">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Car Website. All rights reserved.</p>
+    </div>
+</body>
+</html>

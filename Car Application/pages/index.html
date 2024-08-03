@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3e3e3;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        .nav a {
+            margin: 0 15px;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('car-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .cta-button {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .feature-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .feature-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        @keyframes moveCar {
+            0% { left: -100px; }
+            100% { left: calc(100% + 100px); }
+            }
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 30px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Our Car World</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="login.html">LOGIN</a>
+        <a href="register.html">REGISTER</a>
+    </div>
+    <div class="hero">
+        <h1>Explore Our Latest Car Models</h1>
+        <p>Discover the innovation, performance, and style of our newest cars.</p>
+        <a href="#models" class="cta-button">Explore Models</a>
+    </div>
+    <div class="content" id="about">
+        <h2>About Our Cars</h2>
+        <p>Our cars are designed with the latest technology and a passion for performance and luxury.</p>
+        <img src="../images/car.jpg">
+    </div>
+    <div class="content" id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>Advanced Safety</h3>
+                <p>Top-of-the-line safety features to protect you on the road.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Fuel Efficiency</h3>
+                <p>High performance with great fuel economy.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Luxurious Interiors</h3>
+                <p>Comfort and style come together in our beautifully crafted interiors.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Car Website. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+
+
